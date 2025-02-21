@@ -18,6 +18,12 @@ and include the following element in your canvas pages:
      width="100%" height="200"></iframe>
 ```
 
+<div><hr>
+<blockquote>
+I was asked a question about this and specifically if it needed to be hosted in a separate server rather than embedded in a Canvas page. The issue is that Canvas does not allow Javascript directly, but they do allow embedding elements contained in iframe-s.
+</blockquote>
+<hr></div>
+
 Replace the `start` and `end` query parameters with the start and end dates
 of your course. The timeline will show the current date as a red marker.
 
