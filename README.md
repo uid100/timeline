@@ -3,6 +3,8 @@
 # timeline
 This HTML file renders a simple timeline with three markers.
 
+*Note: The sample image at the top of the screen is a screenshot, not linked to a live, dynamic page.*
+
 
 I have added it to the header in my canvas home pages, as well as
 the syllabus, and each of the module overview pages.
