@@ -24,3 +24,8 @@ of your course. The timeline will show the current date as a red marker.
 Optionally, I moved the styles to my css stylesheet and the script to my js file.
 also, I use a different query string to link to a json file to get the start and 
 end dates, so I can use the same timeline for multiple courses and terms.
+
+
+Here is what it looks like rendered in our Canvas pages:
+
+![canvas example](canvas_example.png)
