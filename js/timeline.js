@@ -20,6 +20,10 @@ export function renderTimeline(startDate, endDate, containerId = "timeline") {
     endMarker.style.left = "100%";
     currentMarker.style.left = (pct * 100) + "%";
 
+    document.getElementById("start-label").style.left = "0%";
+    document.getElementById("end-label").style.left = "100%";
+    document.getElementById("current-label").style.left = (pct * 100) + "%";
+
     container.querySelector("#start-label").textContent = start.toLocaleDateString();
     container.querySelector("#end-label").textContent = end.toLocaleDateString();
     container.querySelector("#current-label").textContent = now.toLocaleDateString();
