@@ -1,3 +1,9 @@
+// Utility: read ?start=YYYY-MM-DD&end=YYYY-MM-DD
+function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+}
+
 export function renderTimeline(startDate, endDate, containerId = "timeline") {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -23,5 +29,13 @@ export function renderTimeline(startDate, endDate, containerId = "timeline") {
     container.querySelector("#current-label").textContent = now.toLocaleDateString();
 }
 
-// Make it available globally
+// Make available globally
 window.renderTimeline = renderTimeline;
+
+// Auto-run if query params exist
+const qsStart = getQueryParam("start");
+const qsEnd = getQueryParam("end");
+
+if (qsStart && qsEnd) {
+    window.renderTimeline(qsStart, qsEnd);
+}
