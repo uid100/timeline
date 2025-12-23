@@ -1,8 +1,4 @@
-// // Utility: read ?start=YYYY-MM-DD&end=YYYY-MM-DD
-// function getQueryParam(name) {
-//     const params = new URLSearchParams(window.location.search);
-//     return params.get(name);
-// }
+// timeline.js
 
 export function renderTimeline(startDate, endDate, containerId = "timeline") {
     const container = document.getElementById(containerId);
@@ -29,5 +25,5 @@ export function renderTimeline(startDate, endDate, containerId = "timeline") {
     container.querySelector("#current-label").textContent = now.toLocaleDateString();
 }
 
-// Make available globally
+// Make available globally for non-module users
 window.renderTimeline = renderTimeline;
