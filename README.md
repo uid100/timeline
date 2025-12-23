@@ -35,3 +35,38 @@ end dates, so I can use the same timeline for multiple courses and terms.
 Here is what it looks like rendered in our Canvas pages:
 
 ![canvas example](canvas_example.png)
+
+
+### updated.. move from CDN to github pages:
+```
+timeline/
+│
+├── index.html        ← demo page (hosted on GitHub Pages)
+├── README.md         ← usage instructions
+│
+├── js/
+│   └── timeline.js   ← your widget code (ES module)
+│
+└── css/
+    └── timeline.css  ← your widget styles
+```
+
+
+------------
+
+# Timeline Widget
+
+A lightweight, embeddable timeline widget for displaying progress between two dates.
+
+Hosted on GitHub Pages:  
+https://uid100.github.io/timeline/
+
+---
+
+## 📦 Installation
+
+Include the CSS and JS from GitHub Pages:
+
+```html
+<link rel="stylesheet" href="https://uid100.github.io/timeline/css/timeline.css">
+<script type="module" src="https://uid100.github.io/timeline/js/timeline.js"></script>

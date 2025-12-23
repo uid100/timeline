@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Widget Demo</title>
+
+    <link rel="stylesheet" href="./css/timeline.css">
+</head>
+<body>
+
+<h1>Timeline Widget Demo</h1>
+
+<div class="timeline" id="timeline">
+    <div class="line"></div>
+    <div id="start-marker" class="marker"></div>
+    <div id="end-marker" class="marker"></div>
+    <div id="current-marker" class="marker current-marker"></div>
+
+    <div id="start-label" class="label"></div>
+    <div id="end-label" class="label"></div>
+    <div id="current-label" class="label current"></div>
+</div>
+
+<script type="module" src="./js/timeline.js"></script>
+
+<script>
+    // Call the widget
+    window.renderTimeline("2025-11-26", "2026-05-23");
+</script>
+
+</body>
+</html>
