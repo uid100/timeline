@@ -22,11 +22,9 @@
     <div id="current-label" class="label current"></div>
 </div>
 
-<script type="module" src="./js/timeline.js"></script>
-
-<script>
-    // Call the widget
-    window.renderTimeline("2025-11-26", "2026-05-23");
+<script type="module">
+  import { renderTimeline } from './js/timeline.js';
+  renderTimeline("2025-11-26", "2026-05-23");
 </script>
 
 </body>
