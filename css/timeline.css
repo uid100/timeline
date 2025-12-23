@@ -1,0 +1,44 @@
+.timeline {
+    display: block;
+    position: relative;
+    margin: 50px auto;
+    height: 100px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+}
+
+.marker {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.current-marker {
+    background-color: #FF5722;
+}
+
+.label {
+    position: absolute;
+    top: 65%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 12px;
+}
+
+.label.current {
+    top: 5%;
+}
