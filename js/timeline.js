@@ -22,3 +22,6 @@ export function renderTimeline(startDate, endDate, containerId = "timeline") {
     container.querySelector("#end-label").textContent = end.toLocaleDateString();
     container.querySelector("#current-label").textContent = now.toLocaleDateString();
 }
+
+// Make it available globally
+window.renderTimeline = renderTimeline;
