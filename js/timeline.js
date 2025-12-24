@@ -1,7 +1,6 @@
 // timeline.js
 
 export function renderTimeline(startDate, endDate, containerId = "timeline") {
-    console.log("Rendering timeline (js) from", startDate, "to", endDate);
     const container = document.getElementById(containerId);
     if (!container) return;
 
