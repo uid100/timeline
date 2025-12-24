@@ -34,7 +34,7 @@
 }
 
 /* Labels */
-.label {
+.timeline-label {
     position: absolute;
     transform: translateX(-50%);
     text-align: center;
